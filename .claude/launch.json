@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "skb-istochnik",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["site/build.js", "--serve"],
+      "port": 4173
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<section class="page-head">
+    <div class="container">
+      <nav class="crumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span>/</span><span>Контакты</span>
+      </nav>
+      <span class="kicker">Контакты</span>
+      <h1 class="page-head__title">Связаться с бюро</h1>
+      <p class="page-head__lead">
+        Пришлите чертёж, образец детали или короткое описание задачи — предложим решение
+        и сориентируем по срокам и стоимости.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contact-card reveal" style="--i:0">
+          {{ICON_PHONE}}
+          <div class="contact-card__label">Телефон</div>
+          <a class="contact-card__value" href="{{PHONE_HREF}}">{{PHONE}}</a>
+        </div>
+        <div class="contact-card reveal" style="--i:1">
+          {{ICON_PHONE}}
+          <div class="contact-card__label">Дополнительный телефон</div>
+          <a class="contact-card__value" href="{{PHONE2_HREF}}">{{PHONE2}}</a>
+        </div>
+        <div class="contact-card reveal" style="--i:2">
+          {{ICON_MAIL}}
+          <div class="contact-card__label">Электронная почта</div>
+          <a class="contact-card__value" href="{{EMAIL_HREF}}">{{EMAIL}}</a>
+        </div>
+        <div class="contact-card reveal" style="--i:3">
+          {{ICON_CLOCK}}
+          <div class="contact-card__label">Режим работы</div>
+          <div class="contact-card__value">{{HOURS}}</div>
+        </div>
+        <div class="contact-card reveal" style="--i:4">
+          {{ICON_PIN}}
+          <div class="contact-card__label">Офис и производство</div>
+          <div class="contact-card__value">{{ADDRESS}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{LEAD}}

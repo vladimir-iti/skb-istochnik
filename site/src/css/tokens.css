@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Дизайн-токены СКБ «Источник»
+   Строгая инженерная палитра: тёмно-синий из логотипа + нейтральные серые.
+   ========================================================================== */
+
+:root {
+  /* --- Цвет --- */
+  --brand: #04295A;            /* тёмно-синий из логотипа */
+  --brand-deep: #021B3D;       /* тёмные секции и подвал */
+  --brand-soft: #0B3D80;
+  --accent: #1F6FD0;           /* акцент: ссылки, активные состояния */
+  --accent-hover: #1559AC;
+
+  --ink: #16202C;              /* основной текст */
+  --ink-muted: #5B6675;        /* вторичный текст */
+  --ink-faint: #8A94A1;
+
+  --bg: #FFFFFF;
+  --bg-muted: #F4F6F9;         /* чередующиеся секции */
+  --bg-sunken: #EDF1F6;
+  --surface: #FFFFFF;
+
+  --line: #DFE5EC;             /* рамки карточек и разделители */
+  --line-strong: #C6D0DC;
+  --line-dark: rgba(255, 255, 255, 0.16);
+
+  --on-dark: #FFFFFF;
+  --on-dark-muted: rgba(255, 255, 255, 0.68);
+
+  /* --- Типографика --- */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-h1: clamp(2rem, 1.4rem + 2.6vw, 3.5rem);
+  --fs-h2: clamp(1.5rem, 1.2rem + 1.4vw, 2.375rem);
+  --fs-h3: clamp(1.125rem, 1.03rem + 0.45vw, 1.375rem);
+  --fs-lead: clamp(1rem, 0.96rem + 0.25vw, 1.1875rem);
+  --fs-body: 1rem;
+  --fs-sm: 0.9375rem;
+  --fs-xs: 0.8125rem;
+
+  --lh-tight: 1.1;
+  --lh-head: 1.2;
+  --lh-body: 1.65;
+  --ls-kicker: 0.14em;
+
+  /* --- Сетка --- */
+  --container: 1280px;
+  --container-narrow: 860px;
+  --pad: clamp(16px, 4vw, 48px);
+
+  /* --- Ритм --- */
+  --section-y: clamp(56px, 4vw + 24px, 104px);
+  --gap: clamp(16px, 1.4vw, 24px);
+
+  /* --- Форма --- */
+  --radius: 4px;               /* строго: почти прямые углы */
+  --radius-lg: 6px;
+
+  /* --- Тени --- */
+  --shadow: 0 1px 2px rgba(4, 41, 90, 0.05);
+  --shadow-hover: 0 12px 32px -14px rgba(4, 41, 90, 0.35);
+
+  /* --- Анимация --- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 160ms;
+  --t: 260ms;
+  --t-slow: 700ms;
+
+  /* --- Шапка (две строки: контакты + меню) --- */
+  --header-main-h: 84px;
+  --header-bar-h: 46px;
+
+  color-scheme: light;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-main-h: 64px;
+    --header-bar-h: 0px;
+  }
+}
