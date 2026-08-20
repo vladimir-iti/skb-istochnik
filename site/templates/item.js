@@ -36,8 +36,19 @@ function renderItem(section, item) {
 
   const kit = (item.kit || []).map((line) => `<li>${icons.check}<span>${line}</span></li>`).join('\n            ');
 
+  const drawings = (item.drawings || [])
+    .map(
+      ([src, caption], i) => `<figure class="drawing reveal" style="--i:${i}">
+            <img src="${src}" alt="${caption}" loading="lazy" />
+            <figcaption>${caption}</figcaption>
+          </figure>`
+    )
+    .join('\n          ');
+
+  const heroIsDoc = item.image && item.image.includes('/drawings/');
   const hero = item.image
-    ? `<div class="item-hero__media reveal"><img src="${item.image}" alt="${item.title}" /></div>`
+    ? `<div class="item-hero__media${heroIsDoc ? ' item-hero__media--doc' : ''} reveal">` +
+      `<img src="${item.image}" alt="${item.title}" /></div>`
     : '';
 
   return `<section class="page-head page-head--item">
@@ -106,8 +117,22 @@ function renderItem(section, item) {
   </section>`
       : ''}
 
-  ${gallery
+  ${drawings
       ? `<section class="section">
+    <div class="container">
+      <h2 class="section__title reveal">Габаритные чертежи</h2>
+      <p class="section__lead reveal" style="margin-bottom:24px">
+        Конструкторская документация разработана в СКБ «Источник».
+      </p>
+      <div class="drawings">
+          ${drawings}
+      </div>
+    </div>
+  </section>`
+      : ''}
+
+  ${gallery
+      ? `<section class="section${drawings ? ' section--muted' : ''}">
     <div class="container">
       <h2 class="section__title reveal">Галерея</h2>
       <div class="gallery">
@@ -118,7 +143,7 @@ function renderItem(section, item) {
       : ''}
 
   ${applications
-      ? `<section class="section${gallery ? ' section--muted' : ''}">
+      ? `<section class="section${gallery && !drawings ? ' section--muted' : ''}">
     <div class="container narrow">
       <h2 class="section__title reveal">Где применяется</h2>
       <ul class="checklist reveal">

@@ -56,16 +56,25 @@ function advantages() {
   ).join('\n        ');
 }
 
-/** Лента фотографий производства. */
+/** Лента фотографий производства с подписями. */
 function production() {
   return PRODUCTION_PHOTOS.map(
-    (src, i) => `<figure class="reveal" style="--i:${i}"><img src="${src}" alt="Производство СКБ «Источник»" loading="lazy" /></figure>`
+    ([src, caption], i) => `<figure class="prodstrip__item reveal" style="--i:${i}">
+          <img src="${src}" alt="${caption}" loading="lazy" />
+          <figcaption>${caption}</figcaption>
+        </figure>`
   ).join('\n        ');
 }
 
-/** Избранные изделия — карточки с фото. */
+/** Избранные изделия — карточки с фото. Сначала собственные разработки. */
 function featured() {
-  return ALL_ITEMS.filter((item) => item.featured || item.gallery)
+  const products = ALL_ITEMS.filter((item) => item.section === 'products' && item.gallery);
+  const ordered = [
+    ...products.filter((item) => item.featured),
+    ...products.filter((item) => !item.featured),
+  ];
+
+  return ordered
     .slice(0, 4)
     .map(
       (item, i) => `<a class="card card--media reveal" href="${item.href}" style="--i:${i}">

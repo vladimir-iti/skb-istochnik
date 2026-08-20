@@ -12,6 +12,36 @@
   color: var(--on-dark);
 }
 
+/* Фотография цеха на первом экране: приглушена и затемнена, чтобы текст
+   оставался читаемым, и медленно наезжает — единственное движение в блоке. */
+.hero__photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  filter: grayscale(0.35);
+  transform: scale(1.06);
+  animation: hero-zoom 22s ease-out forwards;
+}
+
+@keyframes hero-zoom {
+  to { transform: scale(1); }
+}
+
+/* Затемнение слева направо — под текстовый блок */
+.hero--photo .hero__photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, var(--brand-deep) 12%, rgba(2, 27, 61, 0.72) 55%, rgba(2, 27, 61, 0.45) 100%);
+}
+
 /* Инженерная сетка на фоне — медленно уходит вправо-вниз, как чертёжная калька */
 .hero__grid {
   position: absolute;
@@ -90,7 +120,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   gap: 1px;
   margin-top: clamp(48px, 6vw, 84px);
   background: rgba(255, 255, 255, 0.14);
@@ -138,6 +168,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero__grid { animation: none; }
+  .hero__photo img { animation: none; transform: none; }
   .hero .reveal,
   .hero__stats { opacity: 1; transform: none; animation: none; }
 }
@@ -221,7 +252,7 @@
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
   gap: var(--gap);
   counter-reset: step;
 }
@@ -278,10 +309,17 @@
   gap: var(--gap);
 }
 
-.prodstrip figure {
+.prodstrip__item {
   overflow: hidden;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--bg-sunken);
+  background: var(--surface);
+}
+
+.prodstrip__item figcaption {
+  padding: 14px 18px;
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
 }
 
 .prodstrip img {
@@ -291,7 +329,39 @@
   transition: transform var(--t-slow) var(--ease);
 }
 
-.prodstrip figure:hover img { transform: scale(1.05); }
+.prodstrip__item:hover img { transform: scale(1.05); }
+
+/* --- Габаритные чертежи --------------------------------------------------- */
+
+.drawings {
+  display: grid;
+  /* Чертежи формата A3 — по два в ряд, иначе размеры не читаются.
+     min() не даёт колонке вылезти за контейнер на узких экранах. */
+  grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
+  gap: var(--gap);
+}
+
+.drawing {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.drawing img {
+  width: 100%;
+  aspect-ratio: 297 / 210;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+}
+
+.drawing figcaption {
+  padding: 12px 18px 16px;
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
 
 /* --- Двухколоночный блок «о компании» ------------------------------------ */
 
@@ -346,6 +416,14 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.item-hero__media--doc { background: #fff; }
+
+.item-hero__media--doc img {
+  aspect-ratio: 297 / 210;
+  object-fit: contain;
+  padding: 10px;
 }
 
 /* --- Контакты ------------------------------------------------------------ */

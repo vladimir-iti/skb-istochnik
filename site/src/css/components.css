@@ -72,7 +72,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
   gap: var(--gap);
 }
 
@@ -119,6 +119,11 @@
 
 .card:hover .card__media img { transform: scale(1.05); }
 
+/* Чертёж показываем целиком, на белом поле и без наезда при наведении. */
+.card__media--doc { background: #fff; }
+.card__media--doc img { object-fit: contain; padding: 10px; }
+.card:hover .card__media--doc img { transform: none; }
+
 .card__body {
   display: flex;
   flex-direction: column;
@@ -162,7 +167,7 @@
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
   gap: var(--gap);
 }
 
@@ -215,7 +220,7 @@
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -302,7 +307,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
   gap: var(--gap);
 }
 

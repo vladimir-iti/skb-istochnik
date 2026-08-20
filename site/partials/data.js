@@ -42,12 +42,14 @@ const SECTIONS = [
     lead:
       'Создаём точные цифровые модели и полный комплект документации для изготовления, ' +
       'восстановления и модернизации изделий.',
-    image: '/images/common/placeholder.jpg',
+    image: '/images/drawings/zsf-1.jpg',
     items: [
       {
         slug: '3d-skanirovanie',
         title: '3D-сканирование',
         short: 'Точная цифровая копия детали, узла или оборудования.',
+        image: '/images/products/zsu-1.jpg',
+        gallery: ['/images/products/zsu-1.jpg', '/images/products/zsu-1-b.jpg', '/images/products/zsu-2.jpg'],
         lead:
           '3D-сканирование — это получение точной цифровой копии объекта. На современном ' +
           'оборудовании мы создаём трёхмерную модель изделия с высокой точностью и детализацией, ' +
@@ -69,6 +71,13 @@ const SECTIONS = [
         slug: '3d-modelirovanie',
         title: '3D-моделирование',
         short: 'Инженерные модели узлов и механизмов под изготовление.',
+        image: '/images/products/kormax-1.jpg',
+        gallery: [
+          '/images/products/kormax-1.jpg',
+          '/images/products/kormax-3.jpg',
+          '/images/products/tgz-2.jpg',
+          '/images/products/tgz-5.jpg',
+        ],
         lead:
           'Современное машиностроение предъявляет строгие требования к точности проектирования. ' +
           '3D-моделирование обеспечивает не только визуализацию, но и функциональную проработку ' +
@@ -90,6 +99,8 @@ const SECTIONS = [
         slug: 'revers-inzhiniring',
         title: 'Реверс-инжиниринг',
         short: 'Восстановление чертежей и конструкции по готовому изделию.',
+        image: '/images/products/zsf-2.jpg',
+        drawings: [['/images/drawings/zsf-2.jpg', 'Модель изделия и восстановленный по ней чертёж']],
         lead:
           'Реверс-инжиниринг позволяет не просто скопировать деталь, узел или единицу оборудования, ' +
           'а воссоздать её на основе существующего изделия — с анализом конструкции и адаптацией ' +
@@ -111,6 +122,8 @@ const SECTIONS = [
         slug: 'ocifrovka-chertezhey',
         title: 'Оцифровка чертежей',
         short: 'Перевод бумажного архива в рабочие цифровые файлы.',
+        image: '/images/drawings/zsu-2.jpg',
+        drawings: [['/images/drawings/zsu-2.jpg', 'Оцифрованный чертёж в формате, готовом к работе в САПР']],
         lead:
           'Превращаем бумажные чертежи в цифровые модели высокого качества, сохраняя все детали ' +
           'и нюансы оригинальных документов, и отдаём файлы в удобном для работы формате.',
@@ -131,6 +144,12 @@ const SECTIONS = [
         slug: 'konstruktorskaya-dokumentaciya',
         title: 'Разработка конструкторской документации',
         short: 'Полный комплект КД по ГОСТ (ЕСКД) и международным стандартам.',
+        image: '/images/drawings/zsf-1.jpg',
+        drawings: [
+          ['/images/drawings/zsf-1.jpg', 'ЗСФ.00.001 — рабочий чертёж по ЕСКД'],
+          ['/images/drawings/zsu-1.jpg', 'ЗСУ.00.001 — рабочий чертёж по ЕСКД'],
+          ['/images/drawings/kormax.jpg', 'Габаритный чертёж установки KorMax'],
+        ],
         lead:
           'Качественная техническая документация — основа успешного проектирования и производства. ' +
           'Разрабатываем чертежи, схемы, технические описания и сопроводительную документацию, ' +
@@ -167,7 +186,24 @@ const SECTIONS = [
         title: 'Защитные ограждения',
         short: 'Защита стеллажей, оборудования и конструкций зданий.',
         image: '/images/products/zsf-1.jpg',
-        gallery: ['/images/products/zsf-1.jpg', '/images/products/zsf-2.jpg', '/images/products/zsu-1.jpg', '/images/products/zsu-2.jpg'],
+        gallery: [
+          '/images/products/zsf-1.jpg',
+          '/images/products/zsf-1-b.jpg',
+          '/images/products/zsf-2.jpg',
+          '/images/products/zsf-2-b.jpg',
+          '/images/products/zsu-1.jpg',
+          '/images/products/zsu-1-b.jpg',
+          '/images/products/zsu-2.jpg',
+          '/images/products/zsu-2-b.jpg',
+          '/images/products/zsft-1.jpg',
+          '/images/products/zsft-2.jpg',
+        ],
+        drawings: [
+          ['/images/drawings/zsf-1.jpg', 'ЗСФ.00.001 — защита фронтальная ЗСФ-1'],
+          ['/images/drawings/zsf-2.jpg', 'ЗСФ.00.002 — защита фронтальная ЗСФ-2'],
+          ['/images/drawings/zsu-1.jpg', 'ЗСУ.00.001 — защита угловая ЗСУ-1'],
+          ['/images/drawings/zsu-2.jpg', 'ЗСУ.00.002 — защита угловая усиленная ЗСУ-2'],
+        ],
         lead:
           'Элементы защитных ограждений — не декор, а средство обеспечения безопасности на складе, ' +
           'в цехе и на территории. Они предотвращают повреждение дорогостоящего оборудования, ' +
@@ -185,17 +221,25 @@ const SECTIONS = [
           'Снижение затрат на ремонт и восстановление имущества',
         ],
         specs: [
-          ['Модели', 'ЗСФ-1, ЗСФ-2 (фронтальные), ЗСУ-1, ЗСУ-2 (угловые), ЗСФт-1, ЗСФт-2'],
-          ['Материал', 'Конструкционная сталь'],
+          ['ЗСФ-1 — фронтальная', 'Высота 300 мм, основание 249 × 187 мм, масса 3,1 кг'],
+          ['ЗСФ-2 — фронтальная', 'Высота 300 мм, основание 300 × 187 мм, масса 3,5 кг'],
+          ['ЗСУ-1 — угловая', 'Высота 300 мм, полки 150 × 150 мм, масса 2 кг'],
+          ['ЗСУ-2 — угловая усиленная', 'Высота 300 мм, полки 150 × 150 мм, масса 2,15 кг'],
+          ['Материал', 'Ст3 ГОСТ 380-88'],
+          ['Толщина металла', '3 мм'],
+          ['Крепление', '4 отверстия 11 × 21 мм под анкер M10'],
           ['Покрытие', 'Порошковая окраска, сигнальные цвета'],
-          ['Монтаж', 'Анкерное крепление к полу'],
         ],
+        note:
+          'Габаритные размеры и массы приведены по конструкторской документации СКБ «Источник». ' +
+          'Модели ЗСФт-1 и ЗСФт-2 изготавливаются по тем же присоединительным размерам.',
       },
       {
         slug: 'kolesootboyniki',
         title: 'Колёсоотбойники',
         short: 'Делиниаторы для защиты стеллажей и оборудования от наезда техники.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/products/zsft-1.jpg',
+        gallery: ['/images/products/zsft-1.jpg', '/images/products/zsft-1-b.jpg'],
         lead:
           'Колёсоотбойники — незаменимый элемент безопасности склада. Они предотвращают повреждения ' +
           'стеллажей, товаров и оборудования из-за наезда погрузчиков и другой техники.',
@@ -216,7 +260,8 @@ const SECTIONS = [
         slug: 'parkovochnye-stolbiki',
         title: 'Парковочные столбики',
         short: 'Порядок и безопасность движения на парковке и территории.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/products/zsft-2.jpg',
+        gallery: ['/images/products/zsft-2.jpg', '/images/products/zsft-2-b.jpg'],
         lead:
           'Парковочные столбики обеспечивают порядок и безопасность на парковке: предотвращают ' +
           'повреждение автомобилей, наезд на тротуары и другие объекты, регулируют движение транспорта.',
@@ -240,8 +285,10 @@ const SECTIONS = [
         image: '/images/products/tgz-1.jpg',
         gallery: [
           '/images/products/tgz-2.jpg',
+          '/images/products/tgz-6.jpg',
           '/images/products/tgz-3.jpg',
           '/images/products/tgz-4.jpg',
+          '/images/products/tgz-7.jpg',
           '/images/products/tgz-5.jpg',
         ],
         featured: true,
@@ -294,7 +341,13 @@ const SECTIONS = [
         title: 'Оборудование рекуперации KorMax',
         short: 'Установки регенерации технических жидкостей и растворителей.',
         image: '/images/products/kormax-1.jpg',
-        gallery: ['/images/products/kormax-1.jpg', '/images/products/kormax-4.jpg', '/images/products/kormax-5.jpg'],
+        gallery: [
+          '/images/products/kormax-1.jpg',
+          '/images/products/kormax-2.jpg',
+          '/images/products/kormax-3.jpg',
+          '/images/products/kormax-4.jpg',
+        ],
+        drawings: [['/images/drawings/kormax.jpg', 'Габаритный чертёж KorMax: 2500 × 1060 × 2680 мм']],
         featured: true,
         lead:
           'Установка серии KorMax предназначена для регенерации растворителя и получения ' +
@@ -342,7 +395,8 @@ const SECTIONS = [
         slug: 'opory-osveshcheniya',
         title: 'Опоры освещения',
         short: 'Опоры функционального и декоративного назначения.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/stock-1.jpg',
+        gallery: ['/images/production/stock-1.jpg', '/images/production/stock-3.jpg'],
         lead:
           'Изготавливаем опоры освещения для улиц, парковок, производственных территорий и ' +
           'благоустройства. Конструкция, высота и способ монтажа подбираются под проект и ветровую нагрузку.',
@@ -363,7 +417,8 @@ const SECTIONS = [
         slug: 'metallicheskie-shkafy',
         title: 'Металлические шкафы',
         short: 'Шкафы и корпуса для оборудования, инструмента и электроники.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/panel-1.jpg',
+        gallery: ['/images/production/panel-1.jpg', '/images/production/panel-3.jpg'],
         lead:
           'Производим металлические шкафы и корпуса: электротехнические, инструментальные, ' +
           'складские. Изготавливаем как по типовым решениям, так и по индивидуальным чертежам.',
@@ -384,8 +439,15 @@ const SECTIONS = [
         slug: 'svarochnye-stoly',
         title: 'Сварочные столы',
         short: 'Столы с перфорацией под оснастку для сварочных участков.',
-        image: '/images/production/prod-5.jpg',
-        gallery: ['/images/production/prod-5.jpg', '/images/production/prod-2.jpg', '/images/production/prod-6.jpg'],
+        image: '/images/production/welding-5.jpg',
+        gallery: [
+          '/images/production/welding-5.jpg',
+          '/images/production/welding-6.jpg',
+          '/images/production/welding-7.jpg',
+          '/images/production/welding-2.jpg',
+          '/images/production/welding-11.jpg',
+          '/images/production/welding-12.jpg',
+        ],
         lead:
           'Сварочные столы с системой отверстий под оснастку — основа точной и повторяемой сборки ' +
           'металлоконструкций. Изготавливаем столы разных габаритов, в том числе под конкретный участок.',
@@ -414,13 +476,22 @@ const SECTIONS = [
     lead:
       'Выполняем полный цикл металлообработки — от раскроя заготовки до сварки, окраски ' +
       'и сборки готового изделия.',
-    image: '/images/production/prod-3.jpg',
+    image: '/images/production/laser-1.jpg',
     items: [
       {
         slug: 'lazernaya-rezka',
         title: 'Лазерная резка металла',
         short: 'Раскрой листа, профиля и труб с минимальными отклонениями.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/laser-1.jpg',
+        gallery: [
+          '/images/production/laser-1.jpg',
+          '/images/production/laser-2.jpg',
+          '/images/production/laser-3.jpg',
+          '/images/production/laser-4.jpg',
+          '/images/production/laser-5.jpg',
+          '/images/production/laser-7.jpg',
+          '/images/production/panel-1.jpg',
+        ],
         lead:
           'Современное лазерное оборудование и квалифицированные специалисты обеспечивают минимальные ' +
           'отклонения от заданных параметров: изделия получают точную геометрию и ровные края.',
@@ -441,7 +512,8 @@ const SECTIONS = [
         slug: 'truborez',
         title: 'Лазерный труборез',
         short: 'Обработка труб любой формы и размера.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/stock-2.jpg',
+        gallery: ['/images/production/stock-2.jpg', '/images/production/stock-1.jpg', '/images/production/stock-5.jpg'],
         lead:
           'Лазерный труборез обеспечивает минимальные отклонения от заданных параметров и позволяет ' +
           'получать готовые к сварке заготовки со сложными вырезами и стыками.',
@@ -462,7 +534,8 @@ const SECTIONS = [
         slug: 'gibka-metalla',
         title: 'Гибка листового металла',
         short: 'Точная гибка без деформации материала.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/stock-3.jpg',
+        gallery: ['/images/production/stock-3.jpg', '/images/production/stock-4.jpg'],
         lead:
           'Профессиональная гибка листового металла позволяет получить изделия нужной формы ' +
           'с сохранением геометрии и без деформации материала.',
@@ -483,7 +556,14 @@ const SECTIONS = [
         slug: 'svarochnye-raboty',
         title: 'Сварочные работы',
         short: 'Соединение металлов и сборка металлоконструкций.',
-        image: '/images/production/prod-4.jpg',
+        image: '/images/production/welding-1.jpg',
+        gallery: [
+          '/images/production/welding-1.jpg',
+          '/images/production/welding-3.jpg',
+          '/images/production/welding-4.jpg',
+          '/images/production/welding-8.jpg',
+          '/images/production/welding-10.jpg',
+        ],
         lead:
           'Сварочный участок выполняет работы любой сложности: от отдельных швов до изготовления ' +
           'и сборки металлоконструкций под ключ.',
@@ -504,7 +584,8 @@ const SECTIONS = [
         slug: 'poroshkovaya-okraska',
         title: 'Порошковая окраска',
         short: 'Стойкое защитно-декоративное покрытие деталей.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/products/zsf-2.jpg',
+        gallery: ['/images/products/zsf-2.jpg', '/images/products/zsu-2.jpg', '/images/products/tgz-1.jpg'],
         lead:
           'Порошковая окраска не только придаёт деталям привлекательный вид, но и защищает их ' +
           'от коррозии, механических повреждений и других негативных воздействий.',
@@ -525,7 +606,8 @@ const SECTIONS = [
         slug: 'izgotovlenie-pod-klyuch',
         title: 'Изготовление под ключ',
         short: 'Полный цикл: от чертежа до готовой детали.',
-        image: '/images/common/placeholder.jpg',
+        image: '/images/production/panel-2.jpg',
+        gallery: ['/images/production/panel-2.jpg', '/images/production/laser-6.jpg', '/images/production/welding-9.jpg'],
         lead:
           'Берём на себя все этапы производства металлических деталей — от разработки и раскроя ' +
           'до сварки, окраски и контроля качества. Вам не нужно обращаться в несколько компаний.',
@@ -554,7 +636,7 @@ const SECTIONS = [
     lead:
       'Разрабатываем и внедряем решения, которые повышают производительность, точность ' +
       'и управляемость производственных процессов.',
-    image: '/images/products/kormax-1.jpg',
+    image: '/images/products/kormax-2.jpg',
     items: [
       {
         slug: 'avtomatizaciya-predpriyatiy',
@@ -669,12 +751,12 @@ const INDUSTRIES = [
 ];
 
 const PRODUCTION_PHOTOS = [
-  '/images/production/prod-1.jpg',
-  '/images/production/prod-3.jpg',
-  '/images/production/prod-5.jpg',
-  '/images/production/prod-6.jpg',
-  '/images/production/prod-9.jpg',
-  '/images/production/prod-11.jpg',
+  ['/images/production/laser-1.jpg', 'Лазерная резка листового металла'],
+  ['/images/production/laser-2.jpg', 'Раскрой детали на лазерном станке'],
+  ['/images/production/stock-1.jpg', 'Профиль и трубы после раскроя'],
+  ['/images/production/welding-1.jpg', 'Сварочный участок'],
+  ['/images/production/welding-5.jpg', 'Сварочный стол с системой оснастки'],
+  ['/images/production/panel-1.jpg', 'Готовая деталь после резки'],
 ];
 
 /** Плоский список всех позиций — используется сборщиком и поиском по сайту. */

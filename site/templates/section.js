@@ -14,8 +14,10 @@ function renderSection(section) {
   const cards = section.items
     .map((item, index) => {
       const href = `/${section.slug}/${item.slug}/`;
+      // Чертёж нельзя кадрировать под карточку — он должен быть виден целиком.
+      const isDoc = item.image && item.image.includes('/drawings/');
       const media = item.image
-        ? `<div class="card__media"><img src="${item.image}" alt="${item.title}" loading="lazy" /></div>`
+        ? `<div class="card__media${isDoc ? ' card__media--doc' : ''}"><img src="${item.image}" alt="${item.title}" loading="lazy" /></div>`
         : '';
 
       return `<a class="card${item.image ? ' card--media' : ''} reveal" href="${href}" style="--i:${index}">
