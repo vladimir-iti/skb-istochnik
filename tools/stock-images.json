@@ -1,0 +1,222 @@
+[
+ {
+  "file": "automation-1.jpg",
+  "purpose": "Автоматизация: роботизированная линия",
+  "quality": "хорошо",
+  "provider": "Openverse / flickr",
+  "title": "Tesla Motors Assembly Line",
+  "author": "jurvetson",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/44124348109@N01/6858583426",
+  "image": "https://live.staticflickr.com/65535/6858583426_2e3d8e493a_b.jpg"
+ },
+ {
+  "file": "automation-2.jpg",
+  "purpose": "Автоматизация: конвейерная система",
+  "quality": "хорошо",
+  "provider": "Openverse / wikimedia",
+  "title": "Conveyor system in a factory",
+  "author": "falco",
+  "license": "cc0 1.0",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=91257449",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Conveyor_system_in_a_factory.jpg"
+ },
+ {
+  "file": "automation-3.jpg",
+  "purpose": "Автоматизация: промышленный робот",
+  "quality": "средне — нетипичный фон",
+  "provider": "Openverse / rawpixel",
+  "title": "Robotic arm machine in the lab",
+  "author": "",
+  "license": "cc0 1.0",
+  "page": "https://www.rawpixel.com/image/4042554/photo-image-technology-table-wall",
+  "image": "https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZmw0Nzk3MTExMTMyLWltYWdlLWt1NTZ4aGY5LmpwZw.jpg"
+ },
+ {
+  "file": "electronics-1.jpg",
+  "purpose": "Ремонт электроники: пайка платы",
+  "quality": "хорошо",
+  "provider": "Openverse / flickr",
+  "title": "Formidable Shield 19",
+  "author": "CNE CNA C6F",
+  "license": "pdm 1.0",
+  "page": "https://www.flickr.com/photos/94966166@N02/47816305892",
+  "image": "https://live.staticflickr.com/65535/47816305892_3b7e407059_b.jpg"
+ },
+ {
+  "file": "electronics-2.jpg",
+  "purpose": "Ремонт электроники: печатная плата",
+  "quality": "хорошо",
+  "provider": "Openverse / stocksnap",
+  "title": "Computer Board",
+  "author": "Lenharth Systems",
+  "license": "cc0 1.0",
+  "page": "https://stocksnap.io/photo/computer-board-CGZ3XDOZHV",
+  "image": "https://cdn.stocksnap.io/img-thumbs/960w/CGZ3XDOZHV.jpg"
+ },
+ {
+  "file": "electronics-3.jpg",
+  "purpose": "Ремонт электроники: плата крупным планом",
+  "quality": "хорошо",
+  "provider": "Openverse / stocksnap",
+  "title": "Computer Board",
+  "author": "Lenharth Systems",
+  "license": "cc0 1.0",
+  "page": "https://stocksnap.io/photo/computer-board-5U2FV0UNXF",
+  "image": "https://cdn.stocksnap.io/img-thumbs/960w/5U2FV0UNXF.jpg"
+ },
+ {
+  "file": "switchgear-1.jpg",
+  "purpose": "Сборка щитов: шкаф с клеммами и автоматами",
+  "quality": "хорошо",
+  "provider": "Wikimedia Commons",
+  "title": "Boites électriques d'un bâtiment au Bénin.jpg",
+  "author": "Adoscam",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Boites_%C3%A9lectriques_d%27un_b%C3%A2timent_au_B%C3%A9nin.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Boites_%C3%A9lectriques_d%27un_b%C3%A2timent_au_B%C3%A9nin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "switchgear-2.jpg",
+  "purpose": "Сборка щитов: монтаж электрощита",
+  "quality": "хорошо",
+  "provider": "Wikimedia Commons",
+  "title": "Blue Grass Chemical Agent-Destruction Pilot Plant Munitions Demilitarization Building (28783216045).jpg",
+  "author": "PEO ACWA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Munitions_Demilitarization_Building_(28783216045).jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Munitions_Demilitarization_Building_%2828783216045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "switchgear-3.jpg",
+  "purpose": "Сборка щитов: работа с проводкой",
+  "quality": "средне",
+  "provider": "Wikimedia Commons",
+  "title": "Blue Grass Chemical Agent-Destruction Pilot Plant Control and Support Building (8497437747).jpg",
+  "author": "PEO ACWA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Control_and_Support_Building_(8497437747).jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Control_and_Support_Building_%288497437747%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "machine-1.jpg",
+  "purpose": "Модернизация: токарный станок",
+  "quality": "хорошо",
+  "provider": "Openverse / flickr",
+  "title": "Metalworking equipment",
+  "author": "Artem Beliaikin",
+  "license": "cc0 1.0",
+  "page": "https://www.flickr.com/photos/157635012@N07/49390254106",
+  "image": "https://live.staticflickr.com/65535/49390254106_82372cb5a2_b.jpg"
+ },
+ {
+  "file": "machine-2.jpg",
+  "purpose": "Модернизация: узел станка",
+  "quality": "хорошо",
+  "provider": "Openverse / flickr",
+  "title": "Professional grinding machine at a repair shop",
+  "author": "Ivan Radic",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/26344495@N05/49521354468",
+  "image": "https://live.staticflickr.com/65535/49521354468_285833ceb1_b.jpg"
+ },
+ {
+  "file": "machine-3.jpg",
+  "purpose": "Модернизация: режущий инструмент",
+  "quality": "хорошо",
+  "provider": "Openverse / rawpixel",
+  "title": "",
+  "author": "",
+  "license": "cc0 1.0",
+  "page": "https://www.rawpixel.com/image/5941209/free-public-domain-cc0-photo",
+  "image": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg5Mzc0NTUtaW1hZ2Uta3d5bzA2NTQuanBn.jpg"
+ },
+ {
+  "file": "tubes-1.jpg",
+  "purpose": "Труборез: трубы с фигурным резом",
+  "quality": "отлично",
+  "provider": "Openverse / flickr",
+  "title": "Prepared",
+  "author": "Phil Gradwell",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/73228447@N02/9862718853",
+  "image": "https://live.staticflickr.com/5457/9862718853_dbff205b9f_b.jpg"
+ },
+ {
+  "file": "bollard-1.jpg",
+  "purpose": "Парковочные столбики и колёсоотбойники",
+  "quality": "хорошо",
+  "provider": "Wikimedia Commons",
+  "title": "Bollard .jpg",
+  "author": "Parsa 2au",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bollard_.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bollard_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "bollard-2.jpg",
+  "purpose": "Парковочный столбик у тротуара",
+  "quality": "средне",
+  "provider": "Wikimedia Commons",
+  "title": "Bollard on urlwin street aug 21.jpg",
+  "author": "Secretlondon",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bollard_on_urlwin_street_aug_21.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bollard_on_urlwin_street_aug_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+ },
+ {
+  "file": "lightpole-1.jpg",
+  "purpose": "Опора освещения вдоль дороги",
+  "quality": "средне",
+  "provider": "Openverse / flickr",
+  "title": "More of the dual mast street lighting",
+  "author": "CountyLemonade",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/33970903@N02/6316973993",
+  "image": "https://live.staticflickr.com/6056/6316973993_4d639aaa61_b.jpg"
+ },
+ {
+  "file": "cabinet-1.jpg",
+  "purpose": "Металлический шкаф",
+  "quality": "слабо — CAD-визуализация",
+  "provider": "Openverse / flickr",
+  "title": "Filing Cabinet",
+  "author": "401(K) 2013",
+  "license": "by-sa 2.0",
+  "page": "https://www.flickr.com/photos/68751915@N05/7249752654",
+  "image": "https://live.staticflickr.com/7217/7249752654_4b1e9fdf42_b.jpg"
+ },
+ {
+  "file": "cabinet-2.jpg",
+  "purpose": "Ряд металлических шкафов",
+  "quality": "средне",
+  "provider": "Openverse / flickr",
+  "title": "MailBoxes",
+  "author": "nffcnnr",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/85659491@N00/401047557",
+  "image": "https://live.staticflickr.com/137/401047557_1dda26e16f_b.jpg"
+ },
+ {
+  "file": "barrier-1.jpg",
+  "purpose": "Отбойные барьеры",
+  "quality": "слабо — дорожные, не складские",
+  "provider": "Openverse / flickr",
+  "title": "Full Scale Exercise Day 2 - U.S. Army Garrison Humphreys, South Korea - 21 June ",
+  "author": "USAG-Humphreys",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/31687107@N07/7417614814",
+  "image": "https://live.staticflickr.com/7257/7417614814_051f445b0b_b.jpg"
+ },
+ {
+  "file": "bending-1.jpg",
+  "purpose": "Гнутая деталь из листа",
+  "quality": "слабо — CAD-визуализация",
+  "provider": "Openverse / flickr",
+  "title": "sheet metal P1220928",
+  "author": "el cajon yacht club",
+  "license": "by 2.0",
+  "page": "https://www.flickr.com/photos/60944636@N00/9417898245",
+  "image": "https://live.staticflickr.com/2856/9417898245_034f7c6939_b.jpg"
+ }
+]

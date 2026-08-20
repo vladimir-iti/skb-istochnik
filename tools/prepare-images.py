@@ -15,6 +15,7 @@
   • Ещё/Untitled.pdf             → рендеры установки рекуперации KorMax
   • Описнаие по блокам/Блок №3   → фото лазерной резки и заготовок (HEIC → JPEG)
   • Производство/*.jpg           → фото сварочного участка
+  • stock/*.jpg                  → ВРЕМЕННЫЕ картинки из интернета (см. STOCK-IMAGES.md)
 
 Требуется Pillow; HEIC и PDF конвертируются системными sips/qlmanage (macOS).
 """
@@ -257,7 +258,16 @@ def main():
         save(Image.open(path), OUT / 'production' / f'welding-{i}.jpg', CARD, quality=74)
         made += 1
 
-    # 8. Первый экран — кадр лазерной резки в широком формате
+    # 8. Временные картинки из интернета.
+    # Лежат отдельной папкой images/stock/, чтобы их было видно в разметке
+    # и легко заменить на съёмку заказчика. Лицензии — в tools/stock-images.json.
+    stock = SRC / 'stock'
+    if stock.exists():
+        for path in sorted(stock.glob('*.jpg')):
+            save(Image.open(path), OUT / 'stock' / path.name, CARD, quality=78)
+            made += 1
+
+    # 9. Первый экран — кадр лазерной резки в широком формате
     hero_src = block3 / 'image-03-06-25-01-30-8.heic'
     if hero_src.exists():
         save(open_any(hero_src), OUT / 'common' / 'hero.jpg', WIDE, quality=72)

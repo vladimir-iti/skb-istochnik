@@ -238,8 +238,8 @@ const SECTIONS = [
         slug: 'kolesootboyniki',
         title: 'Колёсоотбойники',
         short: 'Делиниаторы для защиты стеллажей и оборудования от наезда техники.',
-        image: '/images/products/zsft-1.jpg',
-        gallery: ['/images/products/zsft-1.jpg', '/images/products/zsft-1-b.jpg'],
+        image: '/images/stock/barrier-1.jpg',
+        gallery: ['/images/stock/barrier-1.jpg', '/images/products/zsft-1.jpg', '/images/products/zsft-1-b.jpg'],
         lead:
           'Колёсоотбойники — незаменимый элемент безопасности склада. Они предотвращают повреждения ' +
           'стеллажей, товаров и оборудования из-за наезда погрузчиков и другой техники.',
@@ -260,8 +260,8 @@ const SECTIONS = [
         slug: 'parkovochnye-stolbiki',
         title: 'Парковочные столбики',
         short: 'Порядок и безопасность движения на парковке и территории.',
-        image: '/images/products/zsft-2.jpg',
-        gallery: ['/images/products/zsft-2.jpg', '/images/products/zsft-2-b.jpg'],
+        image: '/images/stock/bollard-1.jpg',
+        gallery: ['/images/stock/bollard-1.jpg', '/images/stock/bollard-2.jpg', '/images/products/zsft-2.jpg', '/images/products/zsft-2-b.jpg'],
         lead:
           'Парковочные столбики обеспечивают порядок и безопасность на парковке: предотвращают ' +
           'повреждение автомобилей, наезд на тротуары и другие объекты, регулируют движение транспорта.',
@@ -395,8 +395,8 @@ const SECTIONS = [
         slug: 'opory-osveshcheniya',
         title: 'Опоры освещения',
         short: 'Опоры функционального и декоративного назначения.',
-        image: '/images/production/stock-1.jpg',
-        gallery: ['/images/production/stock-1.jpg', '/images/production/stock-3.jpg'],
+        image: '/images/stock/lightpole-1.jpg',
+        gallery: ['/images/stock/lightpole-1.jpg', '/images/production/stock-1.jpg'],
         lead:
           'Изготавливаем опоры освещения для улиц, парковок, производственных территорий и ' +
           'благоустройства. Конструкция, высота и способ монтажа подбираются под проект и ветровую нагрузку.',
@@ -417,8 +417,8 @@ const SECTIONS = [
         slug: 'metallicheskie-shkafy',
         title: 'Металлические шкафы',
         short: 'Шкафы и корпуса для оборудования, инструмента и электроники.',
-        image: '/images/production/panel-1.jpg',
-        gallery: ['/images/production/panel-1.jpg', '/images/production/panel-3.jpg'],
+        image: '/images/stock/cabinet-2.jpg',
+        gallery: ['/images/stock/cabinet-2.jpg', '/images/stock/cabinet-1.jpg', '/images/production/panel-1.jpg', '/images/production/panel-3.jpg'],
         lead:
           'Производим металлические шкафы и корпуса: электротехнические, инструментальные, ' +
           'складские. Изготавливаем как по типовым решениям, так и по индивидуальным чертежам.',
@@ -512,8 +512,8 @@ const SECTIONS = [
         slug: 'truborez',
         title: 'Лазерный труборез',
         short: 'Обработка труб любой формы и размера.',
-        image: '/images/production/stock-2.jpg',
-        gallery: ['/images/production/stock-2.jpg', '/images/production/stock-1.jpg', '/images/production/stock-5.jpg'],
+        image: '/images/stock/tubes-1.jpg',
+        gallery: ['/images/stock/tubes-1.jpg', '/images/production/stock-2.jpg', '/images/production/stock-1.jpg', '/images/production/stock-5.jpg'],
         lead:
           'Лазерный труборез обеспечивает минимальные отклонения от заданных параметров и позволяет ' +
           'получать готовые к сварке заготовки со сложными вырезами и стыками.',
@@ -535,7 +535,7 @@ const SECTIONS = [
         title: 'Гибка листового металла',
         short: 'Точная гибка без деформации материала.',
         image: '/images/production/stock-3.jpg',
-        gallery: ['/images/production/stock-3.jpg', '/images/production/stock-4.jpg'],
+        gallery: ['/images/production/stock-3.jpg', '/images/production/stock-4.jpg', '/images/stock/bending-1.jpg'],
         lead:
           'Профессиональная гибка листового металла позволяет получить изделия нужной формы ' +
           'с сохранением геометрии и без деформации материала.',
@@ -636,12 +636,18 @@ const SECTIONS = [
     lead:
       'Разрабатываем и внедряем решения, которые повышают производительность, точность ' +
       'и управляемость производственных процессов.',
-    image: '/images/products/kormax-2.jpg',
+    image: '/images/stock/automation-1.jpg',
     items: [
       {
         slug: 'avtomatizaciya-predpriyatiy',
         title: 'Автоматизация промышленных предприятий',
         short: 'Системы, которые оптимизируют процессы и снижают затраты.',
+        image: '/images/stock/automation-1.jpg',
+        gallery: [
+          '/images/stock/automation-1.jpg',
+          '/images/stock/automation-2.jpg',
+          '/images/stock/automation-3.jpg',
+        ],
         lead:
           'Разрабатываем и внедряем системы автоматизации, которые позволяют оптимизировать ' +
           'производственные процессы, снизить затраты и повысить качество продукции.',
@@ -662,6 +668,12 @@ const SECTIONS = [
         slug: 'remont-elektroniki',
         title: 'Диагностика и ремонт промышленной электроники',
         short: 'Точная диагностика и восстановление оборудования.',
+        image: '/images/stock/electronics-1.jpg',
+        gallery: [
+          '/images/stock/electronics-1.jpg',
+          '/images/stock/electronics-2.jpg',
+          '/images/stock/electronics-3.jpg',
+        ],
         lead:
           'Проводим точную диагностику и ремонт промышленного оборудования, чтобы минимизировать ' +
           'простои и обеспечить бесперебойную работу производства.',
@@ -682,6 +694,12 @@ const SECTIONS = [
         slug: 'sborka-elektrooborudovaniya',
         title: 'Сборочное производство электротехнического оборудования',
         short: 'Сборка щитов и оборудования по стандартам.',
+        image: '/images/stock/switchgear-1.jpg',
+        gallery: [
+          '/images/stock/switchgear-1.jpg',
+          '/images/stock/switchgear-2.jpg',
+          '/images/stock/switchgear-3.jpg',
+        ],
         lead:
           'Занимаемся сборкой качественного электротехнического оборудования с учётом всех ' +
           'требований и стандартов — от единичных щитов до серийных партий.',
@@ -702,6 +720,12 @@ const SECTIONS = [
         slug: 'modernizaciya-oborudovaniya',
         title: 'Модернизация промышленного оборудования',
         short: 'Обновление устаревшей техники до современных требований.',
+        image: '/images/stock/machine-1.jpg',
+        gallery: [
+          '/images/stock/machine-1.jpg',
+          '/images/stock/machine-2.jpg',
+          '/images/stock/machine-3.jpg',
+        ],
         lead:
           'Помогаем обновить устаревшее оборудование, чтобы повысить его производительность, ' +
           'надёжность и соответствие современным требованиям.',
