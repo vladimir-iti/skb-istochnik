@@ -8,7 +8,8 @@
   "author": "jurvetson",
   "license": "by 2.0",
   "page": "https://www.flickr.com/photos/44124348109@N01/6858583426",
-  "image": "https://live.staticflickr.com/65535/6858583426_2e3d8e493a_b.jpg"
+  "image": "https://live.staticflickr.com/65535/6858583426_2e3d8e493a_b.jpg",
+  "status": "нужно указать автора"
  },
  {
   "file": "automation-2.jpg",
@@ -19,7 +20,8 @@
   "author": "falco",
   "license": "cc0 1.0",
   "page": "https://commons.wikimedia.org/w/index.php?curid=91257449",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Conveyor_system_in_a_factory.jpg"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Conveyor_system_in_a_factory.jpg",
+  "status": "свободно"
  },
  {
   "file": "automation-3.jpg",
@@ -30,7 +32,8 @@
   "author": "",
   "license": "cc0 1.0",
   "page": "https://www.rawpixel.com/image/4042554/photo-image-technology-table-wall",
-  "image": "https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZmw0Nzk3MTExMTMyLWltYWdlLWt1NTZ4aGY5LmpwZw.jpg"
+  "image": "https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZmw0Nzk3MTExMTMyLWltYWdlLWt1NTZ4aGY5LmpwZw.jpg",
+  "status": "свободно"
  },
  {
   "file": "electronics-1.jpg",
@@ -41,7 +44,8 @@
   "author": "CNE CNA C6F",
   "license": "pdm 1.0",
   "page": "https://www.flickr.com/photos/94966166@N02/47816305892",
-  "image": "https://live.staticflickr.com/65535/47816305892_3b7e407059_b.jpg"
+  "image": "https://live.staticflickr.com/65535/47816305892_3b7e407059_b.jpg",
+  "status": "свободно"
  },
  {
   "file": "electronics-2.jpg",
@@ -52,7 +56,8 @@
   "author": "Lenharth Systems",
   "license": "cc0 1.0",
   "page": "https://stocksnap.io/photo/computer-board-CGZ3XDOZHV",
-  "image": "https://cdn.stocksnap.io/img-thumbs/960w/CGZ3XDOZHV.jpg"
+  "image": "https://cdn.stocksnap.io/img-thumbs/960w/CGZ3XDOZHV.jpg",
+  "status": "свободно"
  },
  {
   "file": "electronics-3.jpg",
@@ -63,7 +68,8 @@
   "author": "Lenharth Systems",
   "license": "cc0 1.0",
   "page": "https://stocksnap.io/photo/computer-board-5U2FV0UNXF",
-  "image": "https://cdn.stocksnap.io/img-thumbs/960w/5U2FV0UNXF.jpg"
+  "image": "https://cdn.stocksnap.io/img-thumbs/960w/5U2FV0UNXF.jpg",
+  "status": "свободно"
  },
  {
   "file": "switchgear-1.jpg",
@@ -74,7 +80,8 @@
   "author": "Adoscam",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Boites_%C3%A9lectriques_d%27un_b%C3%A2timent_au_B%C3%A9nin.jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Boites_%C3%A9lectriques_d%27un_b%C3%A2timent_au_B%C3%A9nin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Boites_%C3%A9lectriques_d%27un_b%C3%A2timent_au_B%C3%A9nin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "status": "нужно указать автора + CC BY-SA"
  },
  {
   "file": "switchgear-2.jpg",
@@ -85,7 +92,8 @@
   "author": "PEO ACWA",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Munitions_Demilitarization_Building_(28783216045).jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Munitions_Demilitarization_Building_%2828783216045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Munitions_Demilitarization_Building_%2828783216045%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "status": "нужно указать автора"
  },
  {
   "file": "switchgear-3.jpg",
@@ -96,7 +104,8 @@
   "author": "PEO ACWA",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Control_and_Support_Building_(8497437747).jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Control_and_Support_Building_%288497437747%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Blue_Grass_Chemical_Agent-Destruction_Pilot_Plant_Control_and_Support_Building_%288497437747%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "status": "нужно указать автора"
  },
  {
   "file": "machine-1.jpg",
@@ -107,7 +116,8 @@
   "author": "Artem Beliaikin",
   "license": "cc0 1.0",
   "page": "https://www.flickr.com/photos/157635012@N07/49390254106",
-  "image": "https://live.staticflickr.com/65535/49390254106_82372cb5a2_b.jpg"
+  "image": "https://live.staticflickr.com/65535/49390254106_82372cb5a2_b.jpg",
+  "status": "свободно"
  },
  {
   "file": "machine-2.jpg",
@@ -118,7 +128,8 @@
   "author": "Ivan Radic",
   "license": "by 2.0",
   "page": "https://www.flickr.com/photos/26344495@N05/49521354468",
-  "image": "https://live.staticflickr.com/65535/49521354468_285833ceb1_b.jpg"
+  "image": "https://live.staticflickr.com/65535/49521354468_285833ceb1_b.jpg",
+  "status": "нужно указать автора"
  },
  {
   "file": "machine-3.jpg",
@@ -129,7 +140,8 @@
   "author": "",
   "license": "cc0 1.0",
   "page": "https://www.rawpixel.com/image/5941209/free-public-domain-cc0-photo",
-  "image": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg5Mzc0NTUtaW1hZ2Uta3d5bzA2NTQuanBn.jpg"
+  "image": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg5Mzc0NTUtaW1hZ2Uta3d5bzA2NTQuanBn.jpg",
+  "status": "свободно"
  },
  {
   "file": "tubes-1.jpg",
@@ -140,7 +152,8 @@
   "author": "Phil Gradwell",
   "license": "by 2.0",
   "page": "https://www.flickr.com/photos/73228447@N02/9862718853",
-  "image": "https://live.staticflickr.com/5457/9862718853_dbff205b9f_b.jpg"
+  "image": "https://live.staticflickr.com/5457/9862718853_dbff205b9f_b.jpg",
+  "status": "нужно указать автора"
  },
  {
   "file": "bollard-1.jpg",
@@ -151,7 +164,8 @@
   "author": "Parsa 2au",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bollard_.jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bollard_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bollard_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "status": "нужно указать автора + CC BY-SA"
  },
  {
   "file": "bollard-2.jpg",
@@ -162,7 +176,8 @@
   "author": "Secretlondon",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Bollard_on_urlwin_street_aug_21.jpg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bollard_on_urlwin_street_aug_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bollard_on_urlwin_street_aug_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "status": "нужно указать автора + CC BY-SA"
  },
  {
   "file": "lightpole-1.jpg",
@@ -173,7 +188,8 @@
   "author": "CountyLemonade",
   "license": "by 2.0",
   "page": "https://www.flickr.com/photos/33970903@N02/6316973993",
-  "image": "https://live.staticflickr.com/6056/6316973993_4d639aaa61_b.jpg"
+  "image": "https://live.staticflickr.com/6056/6316973993_4d639aaa61_b.jpg",
+  "status": "нужно указать автора"
  },
  {
   "file": "cabinet-1.jpg",
@@ -184,7 +200,8 @@
   "author": "401(K) 2013",
   "license": "by-sa 2.0",
   "page": "https://www.flickr.com/photos/68751915@N05/7249752654",
-  "image": "https://live.staticflickr.com/7217/7249752654_4b1e9fdf42_b.jpg"
+  "image": "https://live.staticflickr.com/7217/7249752654_4b1e9fdf42_b.jpg",
+  "status": "нужно указать автора + CC BY-SA"
  },
  {
   "file": "cabinet-2.jpg",
@@ -195,28 +212,175 @@
   "author": "nffcnnr",
   "license": "by 2.0",
   "page": "https://www.flickr.com/photos/85659491@N00/401047557",
-  "image": "https://live.staticflickr.com/137/401047557_1dda26e16f_b.jpg"
+  "image": "https://live.staticflickr.com/137/401047557_1dda26e16f_b.jpg",
+  "status": "нужно указать автора"
  },
  {
-  "file": "barrier-1.jpg",
-  "purpose": "Отбойные барьеры",
-  "quality": "слабо — дорожные, не складские",
-  "provider": "Openverse / flickr",
-  "title": "Full Scale Exercise Day 2 - U.S. Army Garrison Humphreys, South Korea - 21 June ",
-  "author": "USAG-Humphreys",
-  "license": "by 2.0",
-  "page": "https://www.flickr.com/photos/31687107@N07/7417614814",
-  "image": "https://live.staticflickr.com/7257/7417614814_051f445b0b_b.jpg"
+  "file": "scan-1.jpg",
+  "purpose": "3D-сканирование — обложка",
+  "quality": "отлично",
+  "provider": "Flickr",
+  "title": "R&D Structures Lab",
+  "author": "Jefferson Lab",
+  "license": "Public Domain Mark",
+  "page": "https://www.flickr.com/photos/jeffersonlab/53496942952/",
+  "image": "https://live.staticflickr.com/65535/53496942952_258a38a629_b.jpg",
+  "status": "свободно"
  },
  {
-  "file": "bending-1.jpg",
-  "purpose": "Гнутая деталь из листа",
-  "quality": "слабо — CAD-визуализация",
-  "provider": "Openverse / flickr",
-  "title": "sheet metal P1220928",
-  "author": "el cajon yacht club",
-  "license": "by 2.0",
-  "page": "https://www.flickr.com/photos/60944636@N00/9417898245",
-  "image": "https://live.staticflickr.com/2856/9417898245_034f7c6939_b.jpg"
+  "file": "scan-2.jpg",
+  "purpose": "3D-сканирование — галерея",
+  "quality": "отлично",
+  "provider": "Flickr",
+  "title": "R&D Structures Lab",
+  "author": "Jefferson Lab",
+  "license": "Public Domain Mark",
+  "page": "https://www.flickr.com/photos/jeffersonlab/53496942622/",
+  "image": "https://live.staticflickr.com/65535/53496942622_98e4fa9185_b.jpg",
+  "status": "свободно"
+ },
+ {
+  "file": "scan-3.jpg",
+  "purpose": "3D-сканирование — галерея",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "20250416-CAGD350Class-JH-025",
+  "author": "ChicoState",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/chicostate/54888504346/",
+  "image": "https://live.staticflickr.com/65535/54888504346_c77623ff04_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "coating-1.jpg",
+  "purpose": "Порошковая окраска — обложка",
+  "quality": "отлично",
+  "provider": "Wikimedia Commons",
+  "title": "Powder-Coat-Gun.jpg",
+  "author": "Alexandros T",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Powder-Coat-Gun.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Powder-Coat-Gun.jpg/1920px-Powder-Coat-Gun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "status": "нужно указать автора + CC BY-SA"
+ },
+ {
+  "file": "coating-2.jpg",
+  "purpose": "Порошковая окраска — галерея",
+  "quality": "отлично",
+  "provider": "Wikimedia Commons",
+  "title": "Pulverbeschichtung.jpg",
+  "author": "Maschinologen",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pulverbeschichtung.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pulverbeschichtung.jpg/1920px-Pulverbeschichtung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "status": "нужно указать автора + CC BY-SA"
+ },
+ {
+  "file": "coating-3.jpg",
+  "purpose": "Порошковая окраска — галерея",
+  "quality": "средне",
+  "provider": "Flickr",
+  "title": "26_0015262 Rohr Collection Image",
+  "author": "San Diego Air & Space Museum Archives",
+  "license": "No known copyright restrictions",
+  "page": "https://www.flickr.com/photos/sdasmarchives/54458138014/",
+  "image": "https://live.staticflickr.com/65535/54458138014_218636ef19_b.jpg",
+  "status": "свободно"
+ },
+ {
+  "file": "bending-2.jpg",
+  "purpose": "Гибка листового металла — обложка",
+  "quality": "хорошо",
+  "provider": "Wikimedia Commons",
+  "title": "JMT JM-S Press Brake.jpg",
+  "author": "JMTUSA",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:JMT_JM-S_Press_Brake.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JMT_JM-S_Press_Brake.jpg/1920px-JMT_JM-S_Press_Brake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "status": "нужно указать автора + CC BY-SA"
+ },
+ {
+  "file": "bending-3.jpg",
+  "purpose": "Гибка листового металла — галерея",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "NC press break",
+  "author": "energymission",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/energymission/51264641735/",
+  "image": "https://live.staticflickr.com/65535/51264641735_1319fb1097_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "bending-4.jpg",
+  "purpose": "Гибка: оснастка листогиба",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "2019-05-FL-211218",
+  "author": "acme london",
+  "license": "CC BY-NC 2.0",
+  "page": "https://www.flickr.com/photos/acme_/47930253666/",
+  "image": "https://live.staticflickr.com/65535/47930253666_e5f7ccb4a6_b.jpg",
+  "status": "нельзя на коммерческом сайте"
+ },
+ {
+  "file": "rackguard-1.jpg",
+  "purpose": "Колёсоотбойники — обложка",
+  "quality": "отлично",
+  "provider": "Flickr",
+  "title": "Countdown Christchurch - Pallet Storage System",
+  "author": "Dematic_ANZ",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/dematic_anz/11161037914/",
+  "image": "https://live.staticflickr.com/3770/11161037914_532becc161_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "rackguard-2.jpg",
+  "purpose": "Колёсоотбойники — галерея",
+  "quality": "отлично",
+  "provider": "Flickr",
+  "title": "Countdown Christchurch - Pallet Storage System",
+  "author": "Dematic_ANZ",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/dematic_anz/11161036704/",
+  "image": "https://live.staticflickr.com/3681/11161036704_189900b34f_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "rackguard-3.jpg",
+  "purpose": "Колёсоотбойники — галерея",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "Countdown Christchurch - Pallet Storage System",
+  "author": "Dematic_ANZ",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/dematic_anz/11161003596/",
+  "image": "https://live.staticflickr.com/7311/11161003596_0cac62d54f_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "cabinet-3.jpg",
+  "purpose": "Металлические шкафы — обложка",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "Extensive range of metal cabinets for offices",
+  "author": "jackryan5266",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/131574171@N04/18081721684/",
+  "image": "https://live.staticflickr.com/400/18081721684_70239164f2_b.jpg",
+  "status": "нельзя без разрешения"
+ },
+ {
+  "file": "lightpole-2.jpg",
+  "purpose": "Опоры освещения — галерея",
+  "quality": "хорошо",
+  "provider": "Flickr",
+  "title": "Royal Watch",
+  "author": "alfija136",
+  "license": "All Rights Reserved (© автор)",
+  "page": "https://www.flickr.com/photos/204611842@N02/55473938934/",
+  "image": "https://live.staticflickr.com/65535/55473938934_cbf2ab40c8_b.jpg",
+  "status": "нельзя без разрешения"
  }
 ]

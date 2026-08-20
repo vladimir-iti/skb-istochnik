@@ -48,8 +48,14 @@ const SECTIONS = [
         slug: '3d-skanirovanie',
         title: '3D-сканирование',
         short: 'Точная цифровая копия детали, узла или оборудования.',
-        image: '/images/products/zsu-1.jpg',
-        gallery: ['/images/products/zsu-1.jpg', '/images/products/zsu-1-b.jpg', '/images/products/zsu-2.jpg'],
+        image: '/images/stock/scan-1.jpg',
+        gallery: [
+          '/images/stock/scan-1.jpg',
+          '/images/stock/scan-2.jpg',
+          '/images/stock/scan-3.jpg',
+          '/images/products/zsu-1.jpg',
+          '/images/products/zsu-2.jpg',
+        ],
         lead:
           '3D-сканирование — это получение точной цифровой копии объекта. На современном ' +
           'оборудовании мы создаём трёхмерную модель изделия с высокой точностью и детализацией, ' +
@@ -238,8 +244,14 @@ const SECTIONS = [
         slug: 'kolesootboyniki',
         title: 'Колёсоотбойники',
         short: 'Делиниаторы для защиты стеллажей и оборудования от наезда техники.',
-        image: '/images/stock/barrier-1.jpg',
-        gallery: ['/images/stock/barrier-1.jpg', '/images/products/zsft-1.jpg', '/images/products/zsft-1-b.jpg'],
+        image: '/images/stock/rackguard-1.jpg',
+        gallery: [
+          '/images/stock/rackguard-1.jpg',
+          '/images/stock/rackguard-2.jpg',
+          '/images/stock/rackguard-3.jpg',
+          '/images/products/zsft-1.jpg',
+          '/images/products/zsft-1-b.jpg',
+        ],
         lead:
           'Колёсоотбойники — незаменимый элемент безопасности склада. Они предотвращают повреждения ' +
           'стеллажей, товаров и оборудования из-за наезда погрузчиков и другой техники.',
@@ -396,7 +408,7 @@ const SECTIONS = [
         title: 'Опоры освещения',
         short: 'Опоры функционального и декоративного назначения.',
         image: '/images/stock/lightpole-1.jpg',
-        gallery: ['/images/stock/lightpole-1.jpg', '/images/production/stock-1.jpg'],
+        gallery: ['/images/stock/lightpole-1.jpg', '/images/stock/lightpole-2.jpg', '/images/production/stock-1.jpg'],
         lead:
           'Изготавливаем опоры освещения для улиц, парковок, производственных территорий и ' +
           'благоустройства. Конструкция, высота и способ монтажа подбираются под проект и ветровую нагрузку.',
@@ -417,8 +429,14 @@ const SECTIONS = [
         slug: 'metallicheskie-shkafy',
         title: 'Металлические шкафы',
         short: 'Шкафы и корпуса для оборудования, инструмента и электроники.',
-        image: '/images/stock/cabinet-2.jpg',
-        gallery: ['/images/stock/cabinet-2.jpg', '/images/stock/cabinet-1.jpg', '/images/production/panel-1.jpg', '/images/production/panel-3.jpg'],
+        image: '/images/stock/cabinet-3.jpg',
+        gallery: [
+          '/images/stock/cabinet-3.jpg',
+          '/images/stock/cabinet-2.jpg',
+          '/images/stock/cabinet-1.jpg',
+          '/images/production/panel-1.jpg',
+          '/images/production/panel-3.jpg',
+        ],
         lead:
           'Производим металлические шкафы и корпуса: электротехнические, инструментальные, ' +
           'складские. Изготавливаем как по типовым решениям, так и по индивидуальным чертежам.',
@@ -534,8 +552,14 @@ const SECTIONS = [
         slug: 'gibka-metalla',
         title: 'Гибка листового металла',
         short: 'Точная гибка без деформации материала.',
-        image: '/images/production/stock-3.jpg',
-        gallery: ['/images/production/stock-3.jpg', '/images/production/stock-4.jpg', '/images/stock/bending-1.jpg'],
+        image: '/images/stock/bending-2.jpg',
+        gallery: [
+          '/images/stock/bending-2.jpg',
+          '/images/stock/bending-3.jpg',
+          '/images/stock/bending-4.jpg',
+          '/images/production/stock-3.jpg',
+          '/images/production/stock-4.jpg',
+        ],
         lead:
           'Профессиональная гибка листового металла позволяет получить изделия нужной формы ' +
           'с сохранением геометрии и без деформации материала.',
@@ -584,8 +608,14 @@ const SECTIONS = [
         slug: 'poroshkovaya-okraska',
         title: 'Порошковая окраска',
         short: 'Стойкое защитно-декоративное покрытие деталей.',
-        image: '/images/products/zsf-2.jpg',
-        gallery: ['/images/products/zsf-2.jpg', '/images/products/zsu-2.jpg', '/images/products/tgz-1.jpg'],
+        image: '/images/stock/coating-1.jpg',
+        gallery: [
+          '/images/stock/coating-1.jpg',
+          '/images/stock/coating-2.jpg',
+          '/images/stock/coating-3.jpg',
+          '/images/products/zsf-2.jpg',
+          '/images/products/tgz-1.jpg',
+        ],
         lead:
           'Порошковая окраска не только придаёт деталям привлекательный вид, но и защищает их ' +
           'от коррозии, механических повреждений и других негативных воздействий.',
