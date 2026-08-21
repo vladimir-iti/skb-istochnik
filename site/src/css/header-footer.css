@@ -12,13 +12,15 @@
   border-bottom: 1px solid var(--line);
 }
 
-/* Первая строка: логотип, адрес, телефон, кнопка */
+/* Первая строка: логотип, адрес, телефон, кнопка.
+   min-height вместо height — чтобы двухстрочный слоган не обрезался. */
 .header__main-inner {
   display: flex;
   align-items: center;
   gap: clamp(12px, 2vw, 32px);
-  height: var(--header-main-h);
-  transition: height var(--t) var(--ease);
+  min-height: var(--header-main-h);
+  padding-block: 8px;
+  transition: min-height var(--t) var(--ease);
 }
 
 .logo { flex: none; }
@@ -30,6 +32,8 @@
 }
 
 .header__slogan {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-width: 0;
   padding-left: clamp(12px, 2vw, 28px);
@@ -37,7 +41,13 @@
   font-size: var(--fs-xs);
   line-height: 1.4;
   color: var(--ink-muted);
-  max-width: 22ch;
+  max-width: 26ch;
+}
+
+/* Каждая строка — отдельный элемент, а не перенос по ширине:
+   так фраза всегда ровно в две строки, независимо от контейнера. */
+.header__slogan span {
+  white-space: nowrap;
 }
 
 .header__info {
@@ -81,9 +91,8 @@
 .header__phone .icon { color: var(--accent); }
 
 /* Компактный режим при скролле */
-.header.is-scrolled .header__main-inner { height: 64px; }
+.header.is-scrolled .header__main-inner { min-height: 64px; }
 .header.is-scrolled .logo img { height: 34px; }
-.header.is-scrolled .header__slogan { display: none; }
 
 /* --- Вторая строка: основное меню ---------------------------------------- */
 

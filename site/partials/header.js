@@ -45,7 +45,7 @@ function header(activeKey = '') {
           <img src="/images/logo/logo.png" width="1036" height="241" alt="${SITE.name}" />
         </a>
 
-        <span class="header__slogan">${SITE.tagline}</span>
+        <span class="header__slogan">${SITE.taglineLines.map((line) => `<span>${line}</span>`).join('')}</span>
 
         <div class="header__info">
           <span class="header__addr">${icons.pin}<span>${CONTACTS.addressShort}</span></span>
