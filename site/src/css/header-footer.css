@@ -53,6 +53,9 @@
 .header__info {
   display: grid;
   gap: 5px;
+  /* Доп. отступ поверх обычного gap в .header__main-inner — иначе
+     слоган и адрес слипаются, хотя слоган занимает не всю свою колонку. */
+  margin-left: clamp(16px, 2.4vw, 40px);
   font-size: var(--fs-xs);
   color: var(--ink-muted);
   white-space: nowrap;
