@@ -30,6 +30,7 @@ const { SITE, CONTACTS, SECTIONS, ALL_ITEMS } = require('./partials/data');
 
 const renderSection = require('./templates/section');
 const renderItem = require('./templates/item');
+const renderAutomationPage = require('./templates/automation');
 const blocks = require('./templates/blocks');
 
 // Домен и подпапка задаются по умолчанию под собственный домен на корне.
@@ -85,14 +86,18 @@ const PAGES = [
 ];
 
 // Страницы разделов и позиций собираются из одних и тех же шаблонов.
+// Исключение — «Автоматизация»: у неё нет отдельных страниц услуг, весь
+// раздел живёт на одной странице с якорями (см. templates/automation.js).
 for (const section of SECTIONS) {
   PAGES.push({
     out: `${section.slug}/index.html`,
-    html: renderSection(section),
+    html: section.key === 'automation' ? renderAutomationPage(section) : renderSection(section),
     active: section.key,
     title: `${section.title} — ${SITE.name}`,
     description: section.lead,
   });
+
+  if (section.key === 'automation') continue;
 
   for (const item of section.items) {
     PAGES.push({

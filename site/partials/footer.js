@@ -13,7 +13,7 @@ function footer() {
           <ul class="footer__list">
             ${section.items
               .slice(0, 6)
-              .map((i) => `<li><a href="/${section.slug}/${i.slug}/">${i.title}</a></li>`)
+              .map((i) => `<li><a href="${i.href}">${i.title}</a></li>`)
               .join('\n            ')}
           </ul>
         </div>`

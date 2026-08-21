@@ -6,6 +6,55 @@
  */
 
 (function () {
+  /* --- Переход по внутренним якорям ---------------------------------------
+     Дублирует встроенную навигацию браузера по #hash — на длинных страницах
+     (например, «Автоматизация» с якорями на услуги) это надёжнее, чем
+     полагаться только на нативный переход. Скип-ссылку («К основному
+     содержанию») не трогаем — ей нужен обычный переход фокуса для программ
+     чтения с экрана.
+
+     Считаем позицию сами через window.scrollTo, а не element.scrollIntoView:
+     scrollIntoView не учитывает отступ под закреплённую шапку одинаково
+     во всех браузерах, а вручную вычисленный scrollTo — надёжный минимум.
+     behavior: 'instant' — намеренно, без анимации: это мгновенно и не зависит
+     от того, успевает ли браузер отрисовать кадры плавной прокрутки (на слабых
+     устройствах анимированный scrollTo на длинную дистанцию иногда обрывается
+     на середине). Заодно не конфликтует с prefers-reduced-motion — тут просто
+     нечего уменьшать. */
+
+  function jumpToAnchor(id) {
+    const target = document.getElementById(id);
+    if (!target) return;
+    const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(top, 0), left: 0, behavior: 'instant' });
+  }
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href*="#"]');
+    if (!link) return;
+    // link.href — уже разрешённый браузером абсолютный URL, поэтому это
+    // ловит и голый "#slug", и «меню/подвал» с полным путём вида
+    // "/automation/#slug" — если он ведёт на текущую же страницу.
+    const url = new URL(link.href);
+    if (url.pathname !== location.pathname || !url.hash) return;
+    const id = url.hash.slice(1);
+    if (!id || id === 'main' || !document.getElementById(id)) return;
+    event.preventDefault();
+    jumpToAnchor(id);
+    history.pushState(null, '', url.hash);
+  });
+
+  // Переход СРАЗУ по ссылке с якорем (с другой страницы, из закладки).
+  // Ждём полной загрузки и ещё два кадра отрисовки: событие load не гарантирует,
+  // что вёрстка уже применена целиком (позднее декодирование картинок на длинной
+  // странице сдвигает контент уже ПОСЛЕ load) — без этого прыжок промахивается.
+  if (location.hash && location.hash !== '#main') {
+    window.addEventListener('load', () => {
+      requestAnimationFrame(() => requestAnimationFrame(() => jumpToAnchor(location.hash.slice(1))));
+    });
+  }
+
   /* --- Появление блоков при скролле -------------------------------------- */
 
   const revealables = document.querySelectorAll('.reveal:not(.hero .reveal)');

@@ -778,6 +778,15 @@ const SECTIONS = [
   },
 ];
 
+/* Ссылка на позицию каталога. У «Автоматизации» нет отдельных страниц услуг —
+   весь раздел собран на одной странице (см. templates/automation.js), поэтому
+   её пункты ведут на якорь этой же страницы, а не на свой URL. */
+for (const section of SECTIONS) {
+  for (const item of section.items) {
+    item.href = section.key === 'automation' ? `/automation/#${item.slug}` : `/${section.slug}/${item.slug}/`;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Прочие данные главной страницы.
    -------------------------------------------------------------------------- */
@@ -821,7 +830,6 @@ const ALL_ITEMS = SECTIONS.flatMap((section) =>
     ...item,
     section: section.key,
     sectionLabel: section.label,
-    href: `/${section.slug}/${item.slug}/`,
   }))
 );
 

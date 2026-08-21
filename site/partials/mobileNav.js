@@ -12,7 +12,7 @@ function mobileNav() {
         </button>
         <div class="mnav__group-body">
           <a class="mnav__link mnav__link--all" href="/${section.slug}/">Все услуги раздела</a>
-          ${section.items.map((i) => `<a class="mnav__link" href="/${section.slug}/${i.slug}/">${i.title}</a>`).join('\n          ')}
+          ${section.items.map((i) => `<a class="mnav__link" href="${i.href}">${i.title}</a>`).join('\n          ')}
         </div>
       </div>`
   ).join('\n      ');

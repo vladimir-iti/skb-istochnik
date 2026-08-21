@@ -177,6 +177,10 @@
 .card:hover .card__more { color: #fff; }
 .card:hover .card__more .icon { transform: translateX(5px); }
 
+/* Карточки быстрой навигации ведут на якорь ниже на той же странице —
+   стрелка вниз уезжает вниз, а не вбок. */
+.card:hover .card__more--down .icon { transform: translateY(4px); }
+
 /* --- Плитки перелинковки ------------------------------------------------- */
 
 .tiles {

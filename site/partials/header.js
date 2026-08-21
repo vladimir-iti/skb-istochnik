@@ -18,7 +18,7 @@ function header(activeKey = '') {
 
   const catalogNav = SECTIONS.map((section) => {
     const links = section.items
-      .map((item) => `<a class="mega__link" href="/${section.slug}/${item.slug}/">${item.title}</a>`)
+      .map((item) => `<a class="mega__link" href="${item.href}">${item.title}</a>`)
       .join('\n              ');
 
     return `<div class="nav-item has-mega">
