@@ -11,12 +11,23 @@ const { SITE, CONTACTS, SECTIONS } = require('./data');
  *   2) синяя — основное меню; разделы каталога раскрываются мегаменю.
  * На мобильных вторая строка скрывается, меню уходит в бургер.
  *
+ * «Автоматизация» — исключение: у неё нет отдельных страниц услуг (весь
+ * раздел на одной странице с якорями, см. templates/automation.js), поэтому
+ * выпадающий список из одного пункта «Все услуги раздела» не нужен —
+ * это просто прямая ссылка, как «О компании» и «Контакты».
+ *
  * @param {string} activeKey - ключ активного раздела ('home' | 'engineering' | ... | 'contacts')
  */
 function header(activeKey = '') {
   const isActive = (key) => (key === activeKey ? ' is-active' : '');
 
   const catalogNav = SECTIONS.map((section) => {
+    if (section.key === 'automation') {
+      return `<div class="nav-item">
+            <a class="nav-link${isActive(section.key)}" href="/${section.slug}/">${section.label}</a>
+          </div>`;
+    }
+
     const links = section.items
       .map((item) => `<a class="mega__link" href="${item.href}">${item.title}</a>`)
       .join('\n              ');

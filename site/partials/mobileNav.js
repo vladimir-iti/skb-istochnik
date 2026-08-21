@@ -3,10 +3,19 @@
 const icons = require('./icons');
 const { CONTACTS, SECTIONS } = require('./data');
 
-/** Мобильное меню: разделы раскрываются в аккордеон, чтобы список не был бесконечным. */
+/**
+ * Мобильное меню: разделы раскрываются в аккордеон, чтобы список не был
+ * бесконечным. «Автоматизация» — исключение: у неё нет отдельных страниц
+ * услуг (весь раздел на одной странице с якорями), поэтому это просто
+ * прямая ссылка без раскрытия, как «О компании» и «Контакты».
+ */
 function mobileNav() {
-  const groups = SECTIONS.map(
-    (section) => `<div class="mnav__group">
+  const groups = SECTIONS.map((section) => {
+    if (section.key === 'automation') {
+      return `<a class="mnav__link mnav__link--top" href="/${section.slug}/">${section.label}</a>`;
+    }
+
+    return `<div class="mnav__group">
         <button type="button" class="mnav__group-head" aria-expanded="false">
           <span>${section.label}</span>${icons.chevronDown}
         </button>
@@ -14,8 +23,8 @@ function mobileNav() {
           <a class="mnav__link mnav__link--all" href="/${section.slug}/">Все услуги раздела</a>
           ${section.items.map((i) => `<a class="mnav__link" href="${i.href}">${i.title}</a>`).join('\n          ')}
         </div>
-      </div>`
-  ).join('\n      ');
+      </div>`;
+  }).join('\n      ');
 
   return `<div class="mnav" id="mobile-nav" data-mobile-nav hidden>
     <div class="mnav__inner">
