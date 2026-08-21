@@ -32,6 +32,18 @@ const renderSection = require('./templates/section');
 const renderItem = require('./templates/item');
 const blocks = require('./templates/blocks');
 
+// Домен и подпапка задаются по умолчанию под собственный домен на корне.
+// Для сборки под GitHub Pages (сайт живёт в подпапке /<repo>/) их переопределяют
+// переменными окружения — см. .github/workflows/deploy.yml.
+if (process.env.SITE_ORIGIN) SITE.origin = process.env.SITE_ORIGIN.replace(/\/+$/, '');
+const BASE_PATH = (process.env.BASE_PATH || '').replace(/\/+$/, '');
+
+/** Добавляет BASE_PATH ко всем корневым ссылкам (href="/…", src="/…"). */
+function withBase(html) {
+  if (!BASE_PATH) return html;
+  return html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE_PATH}/`);
+}
+
 // ---------------------------------------------------------------------------
 // Список страниц: обычные (свой файл в pages/) + генерируемые по шаблону.
 // ---------------------------------------------------------------------------
@@ -103,7 +115,7 @@ const ORG_SCHEMA = {
   name: SITE.name,
   legalName: SITE.nameFull,
   url: SITE.origin,
-  logo: `${SITE.origin}/images/logo/logo.png`,
+  logo: `${SITE.origin}${BASE_PATH}/images/logo/logo.png`,
   telephone: CONTACTS.phone,
   email: CONTACTS.email,
   address: {
@@ -115,7 +127,7 @@ const ORG_SCHEMA = {
 };
 
 function document(page, body) {
-  const canonical = `${SITE.origin}/${page.out.replace(/index\.html$/, '')}`;
+  const canonical = `${SITE.origin}${BASE_PATH}/${page.out.replace(/index\.html$/, '')}`;
 
   return `<!DOCTYPE html>
 <html lang="ru">
@@ -129,7 +141,7 @@ function document(page, body) {
 <meta property="og:title" content="${page.title}" />
 <meta property="og:description" content="${page.description}" />
 <meta property="og:url" content="${canonical}" />
-<meta property="og:image" content="${SITE.origin}/images/logo/logo.png" />
+<meta property="og:image" content="${SITE.origin}${BASE_PATH}/images/logo/logo.png" />
 <meta property="og:locale" content="ru_RU" />
 <meta name="theme-color" content="#04295A" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -216,7 +228,7 @@ function writeFile(relative, content) {
 }
 
 function buildSitemap() {
-  const urls = PAGES.map((p) => `${SITE.origin}/${p.out.replace(/index\.html$/, '')}`);
+  const urls = PAGES.map((p) => `${SITE.origin}${BASE_PATH}/${p.out.replace(/index\.html$/, '')}`);
   return (
     '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
@@ -236,11 +248,11 @@ function build() {
 
   for (const page of PAGES) {
     const raw = page.html !== undefined ? page.html : fs.readFileSync(path.join(PAGES_DIR, page.file), 'utf8');
-    writeFile(page.out, document(page, applyTokens(raw)));
+    writeFile(page.out, withBase(document(page, applyTokens(raw))));
   }
 
   writeFile('sitemap.xml', buildSitemap());
-  writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE.origin}/sitemap.xml\n`);
+  writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE.origin}${BASE_PATH}/sitemap.xml\n`);
   writeFile(
     'favicon.svg',
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#04295A"/>` +
